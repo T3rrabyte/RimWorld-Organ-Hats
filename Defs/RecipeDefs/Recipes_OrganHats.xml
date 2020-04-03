@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<RecipeDef Name="OrganHatRecipe" Abstract="True">
-		<workAmount>1600</workAmount>
-		<workSpeedStat>TailoringSpeed</workSpeedStat>
+	<RecipeDef>
+		<defName>Make_Organweave</defName>
+		<label>make organweave</label>
+		<description>Make a special fabric from an organ.</description>
+		<jobString>Making organweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Tailor</effectWorking>
 		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>450</workAmount>
 		<recipeUsers>
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
@@ -27,23 +31,8 @@
 		</fixedIngredientFilter>
 		<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		<workSkill>Crafting</workSkill>
-	</RecipeDef>
-
-	<RecipeDef ParentName="OrganHatRecipe">
-		<defName>Make_OrganCowboyHat</defName>
-		<label>make a cowboy hat from an organ</label>
-		<jobString>Make a cowboy hat from an organ.</jobString>
 		<products>
-			<Apparel_OrganCowboyHat>1</Apparel_OrganCowboyHat>
-		</products>
-	</RecipeDef>
-
-	<RecipeDef ParentName="OrganHatRecipe">
-		<defName>Make_OrganBowlerHat</defName>
-		<label>make a bowler hat from an organ</label>
-		<jobString>Make a bowler hat from an organ.</jobString>
-		<products>
-			<Apparel_OrganBowlerHat>1</Apparel_OrganBowlerHat>
+			<Organweave>100</Organweave>
 		</products>
 	</RecipeDef>
 </Defs>

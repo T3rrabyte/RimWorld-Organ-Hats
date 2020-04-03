@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>Organweave</defName>
+		<label>organ weave</label>
+		<description>An unpeeled human organ.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/Cloth</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(255,105,180)</color>
+		</graphicData>
+		<statBases>
+			<StuffPower_Armor_Sharp>0.4</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+			<MaxHitPoints>60</MaxHitPoints>
+			<MarketValue>6</MarketValue>
+			<Mass>0.033</Mass>
+			<Flammability>1</Flammability>
+			<DeteriorationRate>5</DeteriorationRate>
+		</statBases>
+		<burnableByRecipe>true</burnableByRecipe>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<stuffProps>
+			<statFactors>
+				<Flammability>1</Flammability>
+				<Beauty>0.5</Beauty>
+			</statFactors>
+			<categories>
+				<li>Fabric</li>
+			</categories>
+			<color>(255,105,180)</color>
+			<commonality>0.1</commonality>
+			<allowColorGenerators>false</allowColorGenerators>
+		</stuffProps>
+		<thingCategories>
+			<li>Textiles</li>
+		</thingCategories>
+	</ThingDef>
+</Defs>
